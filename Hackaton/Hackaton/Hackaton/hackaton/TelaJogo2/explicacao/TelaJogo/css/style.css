@@ -1,0 +1,106 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.game-board{
+    width: 100%;
+    height: 500px;
+    border-bottom: 50px solid rgb(96, 117, 126);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#000a7c,#6f95bb); 
+}
+
+.mob {
+    position: absolute;
+    bottom: -40px;
+    width: 200px;
+    margin-left: 18px;
+    animation: mob-animation 2s infinite linear;
+}
+
+.terra {
+    position: absolute;
+    width: 2200px;
+    animation: terra-animation 100s infinite linear;
+}
+
+/*
+Forwars - Acontecer uma vez
+*/
+
+.astronauta {
+    width: 115px;
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: -22px;
+}
+
+.jump {
+    position: absolute;
+    animation: jump 500ms ease-out;
+}
+
+@keyframes mob-animation {
+    from {
+        right: -150px;
+    }
+    15%{
+        bottom: 10px;
+    }
+
+    30%{
+        bottom: -40px;
+    }
+    45%{
+        bottom: 10px;
+    }
+    60%{
+        bottom: -40px;
+    }
+    75%{
+        bottom: 10px;
+    }
+    90%{
+        bottom: -40px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+0%{
+    bottom: 0;
+}
+40%{
+    bottom: 210px;
+}
+50%{
+    bottom: 210px;
+}
+60%{
+    bottom: 190px;
+}
+100%{
+    bottom: 0;
+}
+
+}
+
+@keyframes terra-animation {
+    0% {
+        right: -550px;
+    }
+    
+    100% {
+        right: 100%;
+    }
+}

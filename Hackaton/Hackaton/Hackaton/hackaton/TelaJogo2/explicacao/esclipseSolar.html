@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Eclipse Solar</title>
+
+  <style> 
+    * {
+      overflow: hidden;
+    }
+    .button {
+      left: 50%;
+    }
+  </style>
+</head>
+<body style="background-color: #000;">
+  <img src="images/eclipseSolar.png" alt="Eclipse Solar" style="position: absolute; top: 75%; left: 50%; transform: translate(-50%, -50%);">
+  <p style="color: #fff; position: absolute; bottom: 40px;">
+    - Eclipse Solar Total: O sol fica totalmente escurecido pela lua, criando uma escuridão temporária durante o dia. Apenas uma pequena área na Terra experimenta o eclipse solar total a cada vez.<br>
+  </p>
+  <script>
+    // Define uma função que será executada após 5 segundos
+    function showButton() {
+      // Cria um botão
+      const button = document.
+      
+      createElement("button");
+      button.id = "button"
+      button.innerHTML = "Próximo";
+    
+      button.addEventListener("click", function()  {
+        // Redireciona para a imagem de eclipse solar parcial 
+        
+        window.location.href = "eclipseSolarParcialarquivo.html";
+        
+      });
+      // Adiciona o botão ao documento
+      document.body.appendChild(button);
+       // Posiciona o botão 100 pixels abaixo da parte inferior da página
+       button.style.position = "absolute";
+      button.style.bottom = "-10px";
+      button.style.right = "600px";
+      button.style.borderRadius="5px";
+      button.style.width = "100px";
+      button.style.height = "40px";
+    }
+    // Define um temporizador para executar a função após 5 segundos
+    setTimeout(showButton, 10000);
+  </script>
+</body>
+</html>

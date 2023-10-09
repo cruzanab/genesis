@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+
+    <title>AstroGame</title>
+</head>
+<body>
+    
+<div class="game-board">
+    <img src="Imagens/Terra g.png" alt="terra" class="terra">
+    <img src="Imagens/gifTemporario.gif" class="astronauta">
+    <img src="Imagens/output-onlinegiftools.gif" class="mob">
+
+    <script>
+        // Define uma função que será executada após 5 segundos
+
+        function showButton() {
+          // Cria um botão
+          const button = document.createElement("button");
+          button.id = "button"
+          button.innerHTML = "Próximo";
+        
+          button.addEventListener("click", function()  {
+            // Redireciona para a imagem de eclipse solar parcial 
+            
+            window.location.href = "./explicacao/esclipseSolar.html";
+            
+          });
+          // Adiciona o botão ao documento
+          document.body.appendChild(button);
+           // Posiciona o botão 100 pixels abaixo da parte inferior da página
+           button.style.position = "absolute";
+          button.style.bottom = "100px";
+          button.style.right = "600px";
+          button.style.borderRadius="5px";
+          button.style.width = "150px";
+          button.style.height = "40px";
+          button.style.color=blue;
+        }
+
+        // Define um temporizador para executar a função após 5 segundos
+        const mostrarBotao = setTimeout(showButton, 10000);
+      </script>
+   
+</div>
+</body>
+</html>

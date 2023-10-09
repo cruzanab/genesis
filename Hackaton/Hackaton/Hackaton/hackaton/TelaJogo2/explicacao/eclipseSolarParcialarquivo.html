@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Eclipse Solar Parcial</title>
+</head>
+<body style="background-color: #000;">
+  <img src="images/eclipseSolarParcial.png" alt="Eclipse Solar" style="position: absolute; top: 45%; left: 45%; transform: translate(-50%, -50%);
+  width: 800px;
+  height: 800px;
+  ">
+  <p style ="color: #fff; position: absolute; bottom: -5px;">
+   
+    - Eclipse Solar Parcial: Apenas uma parte do sol fica escura pela lua, criando um eclipse solar parcial. Isso é mais comum e pode ser visto em uma área mais ampla da Terra.
+  </p>
+  <script>
+    // Define uma função que será executada após 5 segundos
+    function showButton() {
+      // Cria um botão
+      const button = document.
+      
+      createElement("button");
+      button.innerHTML = "Próxima fase";
+    
+      button.addEventListener("click", function()  {
+        // Redireciona para a imagem de eclipse solar parcial 
+        
+        window.location.href = "./TelaJogo";
+        
+      });
+      // Adiciona o botão ao documento
+      document.body.appendChild(button);
+       // Posiciona o botão 100 pixels abaixo da parte inferior da página
+       button.style.position = "absolute";
+      button.style.bottom = "-65px";
+      button.style.right = "589px";
+      button.style.borderRadius="5px";
+      button.style.width = "100px";
+      button.style.height = "40px";
+    }
+    // Define um temporizador para executar a função após 5 segundos
+    setTimeout(showButton, 5000);
+  </script>
+</body>
+</html>
